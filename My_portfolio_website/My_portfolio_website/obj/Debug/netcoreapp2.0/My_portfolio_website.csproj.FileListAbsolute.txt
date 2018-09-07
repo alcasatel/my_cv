@@ -1,0 +1,11 @@
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\bin\Debug\netcoreapp2.0\My_portfolio_website.deps.json
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\bin\Debug\netcoreapp2.0\My_portfolio_website.runtimeconfig.json
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\bin\Debug\netcoreapp2.0\My_portfolio_website.runtimeconfig.dev.json
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\bin\Debug\netcoreapp2.0\My_portfolio_website.dll
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\bin\Debug\netcoreapp2.0\My_portfolio_website.pdb
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\obj\Debug\netcoreapp2.0\My_portfolio_website.csprojAssemblyReference.cache
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\obj\Debug\netcoreapp2.0\My_portfolio_website.csproj.CoreCompileInputs.cache
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\obj\Debug\netcoreapp2.0\My_portfolio_website.AssemblyInfoInputs.cache
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\obj\Debug\netcoreapp2.0\My_portfolio_website.AssemblyInfo.cs
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\obj\Debug\netcoreapp2.0\My_portfolio_website.dll
+C:\Users\Дух\Desktop\DAILY\ASP_NET\блог\My_portfolio_website\My_portfolio_website\obj\Debug\netcoreapp2.0\My_portfolio_website.pdb
