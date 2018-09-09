@@ -1,226 +1,61 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title – приложение ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative CV</title>
+    <meta name="description" content="Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skils and experience." />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/aos.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/main.css" rel="stylesheet">
 </head>
-<body>
-    <div id="wrapper">
-        <header id="header">
-            <h1><a href="#">Future Imperfect</a></h1>
-            <nav class="links">
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Ipsum</a></li>
-                    <li><a href="#">Feugiat</a></li>
-                    <li><a href="#">Tempus</a></li>
-                    <li><a href="#">Adipiscing</a></li>
-                </ul>
-            </nav>
-            <nav class="main">
-                <ul>
-                    <li class="search">
-                        <a class="fa-search" href="#search">Search</a>
-                        <form id="search" method="get" action="#">
-                            <input type="text" name="query" placeholder="Search" />
-                        </form>
-                    </li>
-                    <li class="menu">
-                        <a class="fa-bars" href="#menu">Menu</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section id="menu">
-
-            <section>
-                <form class="search" method="get" action="#">
-                    <input type="text" name="query" placeholder="Search" />
-                </form>
-            </section>
-
-            <section>
-                <ul class="links">
-                    <li>
-                        <a href="#">
-                            <h3>Lorem ipsum</h3>
-                            <p>Feugiat tempus veroeros dolor</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h3>Dolor sit amet</h3>
-                            <p>Sed vitae justo condimentum</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h3>Feugiat veroeros</h3>
-                            <p>Phasellus sed ultricies mi congue</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h3>Etiam sed consequat</h3>
-                            <p>Porta lectus amet ultricies</p>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <ul class="actions vertical">
-                    <li><a href="#" class="button big fit">Log In</a></li>
-                </ul>
-            </section>
-
-        </section>
-
-        <div id="main">
-            @RenderBody()
-        </div>
-
-        <!-- Sidebar -->
-        <section id="sidebar">
-
-            <!-- Intro -->
-            <section id="intro">
-                <a href="#" class="logo"><img src="Content/images/logo.jpg" alt="" /></a>
-                <header>
-                    <h2>Future Imperfect</h2>
-                    <p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-                </header>
-            </section>
-
-            <!-- Mini Posts -->
-            <section>
-                <div class="mini-posts">
-
-                    <!-- Mini Post -->
-                    <article class="mini-post">
-                        <header>
-                            <h3><a href="#">Vitae sed condimentum</a></h3>
-                            <time class="published" datetime="2015-10-20">October 20, 2015</time>
-                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-                        </header>
-                        <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-                    </article>
-
-                    <!-- Mini Post -->
-                    <article class="mini-post">
-                        <header>
-                            <h3><a href="#">Rutrum neque accumsan</a></h3>
-                            <time class="published" datetime="2015-10-19">October 19, 2015</time>
-                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-                        </header>
-                        <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-                    </article>
-
-                    <!-- Mini Post -->
-                    <article class="mini-post">
-                        <header>
-                            <h3><a href="#">Odio congue mattis</a></h3>
-                            <time class="published" datetime="2015-10-18">October 18, 2015</time>
-                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-                        </header>
-                        <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-                    </article>
-
-                    <!-- Mini Post -->
-                    <article class="mini-post">
-                        <header>
-                            <h3><a href="#">Enim nisl veroeros</a></h3>
-                            <time class="published" datetime="2015-10-17">October 17, 2015</time>
-                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-                        </header>
-                        <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                    </article>
-
+<body id="top">
+    <header>
+        <div class="profile-page sidebar-collapse">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+                <div class="container">
+                    <div class="navbar-translate">
+                        <a class="navbar-brand" href="#" rel="tooltip">Creative CV</a>
+                        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-
-            <!-- Posts List -->
-            <section>
-                <ul class="posts">
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
-                                <time class="published" datetime="2015-10-20">October 20, 2015</time>
-                            </header>
-                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
-                                <time class="published" datetime="2015-10-15">October 15, 2015</time>
-                            </header>
-                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
-                                <time class="published" datetime="2015-10-10">October 10, 2015</time>
-                            </header>
-                            <a href="#" class="image"><img src="images/pic10.jpg" alt="" /></a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="#">Magna enim accumsan tortor cursus ultricies</a></h3>
-                                <time class="published" datetime="2015-10-08">October 8, 2015</time>
-                            </header>
-                            <a href="#" class="image"><img src="images/pic11.jpg" alt="" /></a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="#">Congue ullam corper lorem ipsum dolor</a></h3>
-                                <time class="published" datetime="2015-10-06">October 7, 2015</time>
-                            </header>
-                            <a href="#" class="image"><img src="images/pic12.jpg" alt="" /></a>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- About -->
-            <section class="blurb">
-                <h2>About</h2>
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button">Learn More</a></li>
-                </ul>
-            </section>
-
-            <!-- Footer -->
-            <section id="footer">
-                <ul class="icons">
-                    <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
-                    <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-            </section>
-
-        </section>
-
+            </nav>
+        </div>
+    </header>
+    <div class="page-content">
+        @RenderBody()
     </div>
+    <footer class="footer">
+        <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+        <div class="h4 title text-center">Anthony Barnett</div>
+        <div class="text-center text-muted">
+            <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+        </div>
+    </footer>
+    <script src="~/Content/js/core/jquery.3.2.1.min.js"></script>
+    <script src="~/Content/js/core/popper.min.js"></script>
+    <script src="~/Content/js/core/bootstrap.min.js"></script>
+    <script src="~/Content/js/now-ui-kit.js?v=1.1.0"></script>
+    <script src="~/Content/js/aos.js"></script>
+    <script src="~/Content/js/main.js"></script>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

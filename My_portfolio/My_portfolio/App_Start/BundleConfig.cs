@@ -20,11 +20,13 @@ namespace Metanit
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Content/js/main.js",
+                      "~/Content/js/aos.j"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/css/main.css"));
+                      "~/Content/css/main.css",
+                      "~/Content/css/aos.css",
+                      "~/Content/css/bootstrap.min.css"));
         }
     }
 }
