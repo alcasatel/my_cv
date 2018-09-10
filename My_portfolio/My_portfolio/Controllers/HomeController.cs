@@ -10,11 +10,13 @@ namespace Metanit.Controllers
 {
     public class HomeController : Controller
     {
-
+        public string Name = "Грошев Александр";
+        public string Vocation = "";
         // GET: Home
         public ActionResult Index()
         {
-
+            ViewBag.name = Name;
+            ViewBag.Vocation = Vocation;
             return View();
         }
 
