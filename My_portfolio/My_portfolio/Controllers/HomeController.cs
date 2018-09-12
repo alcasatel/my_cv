@@ -30,9 +30,12 @@ namespace Metanit.Controllers
             ViewBag.phone = phone;
             ViewBag.lang = languages;
             ViewBag.about = about;
+
             return View();
         }
 
-       
+
+
+
     }
 }
