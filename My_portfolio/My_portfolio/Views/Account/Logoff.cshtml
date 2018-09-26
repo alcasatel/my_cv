@@ -1,0 +1,28 @@
+﻿@model Metanit.Models.User
+
+@{
+    ViewBag.Title = "Выход";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="width:50%; margin:100px 25%;" class="text-center">
+    <h4>Вы авторизованы!</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Логин пользователя:
+        </dt>
+
+        <dd>
+            @ViewBag.Email
+        </dd>
+
+    </dl>
+    @Html.ActionLink("Переход в личный кабинет","UserInfo")<br />
+    @Html.ActionLink("Выход", "Logoff",null, new { @class = "btn btn-danger" })
+    <hr />
+</div>
+<p>
+    
+
+</p>

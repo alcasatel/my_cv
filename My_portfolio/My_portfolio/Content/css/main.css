@@ -2017,27 +2017,27 @@ fieldset[disabled]
 }
 
 .form-control::-moz-placeholder {
-  color: #DDDDDD;
-  opacity: 1;
-  filter: alpha(opacity=100);
+    color: #c1c1c1;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .form-control:-moz-placeholder {
-  color: #DDDDDD;
+  color: #c1c1c1;
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #DDDDDD;
-  opacity: 1;
-  filter: alpha(opacity=100);
+    color: #c1c1c1;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .form-control:-ms-input-placeholder {
-  color: #DDDDDD;
-  opacity: 1;
-  filter: alpha(opacity=100);
+    color: #c1c1c1;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .form-control {
@@ -7273,3 +7273,4 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
