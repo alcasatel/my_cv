@@ -1,5 +1,6 @@
 ﻿using Metanit.Models;
 using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -7,6 +8,7 @@ namespace Metanit.Controllers
 {
     public class AccountController : Controller
     {
+        UserContext db = new UserContext();
         public string Index()
         {
             string result = "Вы не авторизованы";
@@ -38,12 +40,12 @@ namespace Metanit.Controllers
                 User user = null;
                 using (UserContext db = new UserContext())
                 {
-                    user = db.Users.FirstOrDefault(u => u.Email == model.Name && u.Password == model.Password);
+                    user = db.Users.FirstOrDefault(u => u.Email == model.Login && u.Password == model.Password);
 
                 }
                 if (user != null)
                 {
-                    FormsAuthentication.SetAuthCookie(model.Name, true);
+                    FormsAuthentication.SetAuthCookie(model.Login, true);
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -61,6 +63,30 @@ namespace Metanit.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        
+        public ActionResult UserInfo(int id = 1)
+        {
+            var user = db.Users.Find(id);
+            return View(user);
+        }
+
+        [HttpGet]
+        public ActionResult EditMainInfo(int id = 1)
+        {
+            var user = db.Users.Find(id);
+
+            return View(user);
+        }
+
+        [HttpPost]
+        public ActionResult EditMainInfo(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(user).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("UserInfo");
+            }
+            return View("user");
+        }
     }
 }

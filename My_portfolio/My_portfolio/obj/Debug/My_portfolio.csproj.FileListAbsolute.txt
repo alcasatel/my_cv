@@ -202,3 +202,8 @@ C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\bin
 C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\bin\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\obj\Debug\My_portfolio.csproj.CopyComplete
+C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\obj\Debug\Metanit.Migrations.InitialCreate.resources
+C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\obj\Debug\My_portfolio.csproj.GenerateResource.cache
+C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\obj\Debug\Metanit.Migrations.cvFile.resources
+C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\obj\Debug\Metanit.Migrations.EducationChange1.resources
+C:\Users\Дух\Desktop\DAILY\ASP_NET\резюме\My_portfolio\My_portfolio\obj\Debug\Metanit.Migrations.Experiences.resources

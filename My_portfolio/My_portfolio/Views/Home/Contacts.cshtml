@@ -1,4 +1,6 @@
-﻿<div class="section" id="contact">
+﻿@model Metanit.Models.User
+
+<div class="section" id="contact">
     <div class="cc-contact-information" style="background-image: url('/Content/images/staticmap.png');">
         <div class="container">
             <div class="cc-contact">
@@ -10,7 +12,7 @@
                                 <div class="col-md-6">
                                     <div class="card-body">
                                         <form action="https://formspree.io/your@email.com" method="POST">
-                                            <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                                            <div class="p pb-3"><strong>Заполните форму</strong></div>
                                             <div class="row mb-3">
                                                 <div class="col">
                                                     <div class="input-group">
@@ -53,11 +55,11 @@
                                 <div class="col-md-6">
                                     <div class="card-body">
                                         <p class="mb-0"><strong>Адресс </strong></p>
-                                        <p class="pb-2">@ViewBag.adress</p>
+                                        <p class="pb-2">@Model.Adress</p>
                                         <p class="mb-0"><strong>Телефон</strong></p>
-                                        <p class="pb-2">@ViewBag.phone</p>
+                                        <p class="pb-2">@Model.Phone</p>
                                         <p class="mb-0"><strong>Email</strong></p>
-                                        <p>@ViewBag.email</p>
+                                        <p>@Model.Email</p>
                                     </div>
                                 </div>
                             </div>

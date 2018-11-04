@@ -1,0 +1,100 @@
+﻿@model Metanit.Models.User
+
+@{
+    ViewBag.Title = "UserInfo";
+}
+
+
+<div class="mainPage text-center shadowBox">
+    <h4>Личный кабинет пользователя</h4>
+
+    <hr />
+    <p>
+        Основные данные о пользователе<br />
+            @Html.ActionLink("Редактировать значения", "EditMainInfo", null, new { id = Model.Id })
+
+    </p><hr />
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <dl class="dl-horizontal">
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FIO)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.FIO)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DateOfBirth)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DateOfBirth)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Login)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Login)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Vocation)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Vocation)
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="col">
+                <dl class="dl-horizontal">
+
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Adress)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Adress)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Phone)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.About)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.About)
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+</div>
+
