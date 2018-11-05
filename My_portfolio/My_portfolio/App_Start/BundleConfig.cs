@@ -24,9 +24,9 @@ namespace Metanit
                       "~/Content/js/aos.j"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/css/main.css",
                       "~/Content/css/aos.css",
                       "~/Content/css/bootstrap.min.css",
+                      "~/Content/css/main.css",
                       "~/Content/css/customStyle.css"));
         }
     }

@@ -15,8 +15,11 @@ namespace Metanit.Controllers
         public ActionResult Index(int id=1)
         {
             var user = db.Users.Find(id);
+
             user.Educations = db.Educations.Where(m => m.UserId == id);
             user.Experiences = db.Experiences.Where(m => m.UserId == id);
+            user.Skills = db.Skills.Where(m => m.UserId == id);
+
             if (user == null) { return HttpNotFound(); }
 
             return View(user);
